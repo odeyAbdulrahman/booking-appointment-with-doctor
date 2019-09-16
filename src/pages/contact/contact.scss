@@ -1,0 +1,73 @@
+.mrg-top{
+    margin-top:30px;
+
+}
+.about-title {
+    width:98%;
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+    border: solid 1px linear-gradient(259deg, #009696 45%, #1cbedf 100%);
+    border-radius: 35px 15px 15px 0px;
+    color:#fff;
+    padding : 5px;
+            -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.contact-info {
+    width: 98%;
+    text-decoration:rtl;
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Cairo';
+    font-size: 14px;
+    border: solid 1px linear-gradient(259deg, #009696 45%, #1cbedf 100%);
+    border-radius: 15px;
+    display: inline-block;
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+    color:#fff;
+        -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.box-icons
+{
+    margin :20px 0px;
+}
+.d-icon {
+    width: 32%;
+    float: right;
+    text-align: center;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Cairo';
+    border: solid 1px linear-gradient(259deg, #009696 45%, #1cbedf 100%);
+    border-radius: 15px;
+    display: inline-table;
+    text-decoration:none;
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+        -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.input-text
+{
+    background-color: #fff;
+    color:#ddd;
+    border: 1px solid #ccc;
+    text-align: right !important;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.input-btn
+{
+    padding: 6px 8px !important;
+    text-align: center !important;
+    float:right;
+    background:#fff !important;
+    color:black;
+}

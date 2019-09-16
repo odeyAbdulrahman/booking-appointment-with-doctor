@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/Cairo-Regular.ttf');
+    src: url('../assets/Cairo-Regular.ttf?#iefix') format('embedded-opentype'),
+          url('../assets/Cairo-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/Cairo-Regular.ttf');
+    src: url('../assets/Cairo-Regular.ttf?#iefix') format('embedded-opentype'),
+         url('../assets/Cairo-Regular.ttf') format('truetype');
+  }
+  
+  $font-family-base: Cairo;
+  $font-family-ios-base: $font-family-base;
+  $font-family-md-base: $font-family-base;
+  $font-family-wp-base: $font-family-base;

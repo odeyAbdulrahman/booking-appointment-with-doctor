@@ -1,0 +1,76 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+*{
+    font-family: Cairo;
+    box-sizing: border-box;
+  }
+  .color-app , .button-md{
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+  }
+
+  .alert-wrapper
+{
+  background: rgb(163,195,255);
+  background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+  border-radius:10px !important; 
+  -webkit-box-shadow: 0 4px 15px rgba(0,0,0,.35) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,.35) !important;
+}
+.alert-head
+{
+  color: #ffffff !important;
+  padding: 14px 20px !important;
+}
+.alert-radio-group
+{
+  border-top: 1px solid rgba(25,108,255,1) !important;
+  border-bottom: 1px solid rgba(25,108,255,1) !important;
+}
+.button-inner
+{
+  direction: rtl !important;
+}
+
+.alert-md .alert-radio-label
+{
+  padding: 13px 16px !important;
+  text-align: right !important;
+  color: #ffffff !important;
+}
+
+.alert-md .alert-radio-icon {
+  left: -90% !important;
+display: none !important;
+}
+
+.alert-button-group
+{
+  direction: rtl !important;
+}
+
+.alert-md .alert-button
+{
+  color: #ffffff;
+  direction: initial !important;
+}
+.alert-radio-label:focus ,.alert-radio-label:hover
+{
+  opacity: 0.5;
+  border: solid 2px rgb(102, 157, 250);
+  color: red !important;
+}

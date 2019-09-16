@@ -1,0 +1,63 @@
+<!--
+  Generated template for the Page2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title> أطلب حجزك الان  - 2 </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 class="text-center">أكمِل تعبئة البيانات الأساسیة </h2>
+      <ion-item>
+        <ion-label>الاسم الاول</ion-label>
+        <ion-input [(ngModel)]="postData.Patient_FirstName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>الاسم الثاني</ion-label>
+        <ion-input [(ngModel)]="postData.Patient_MiddleName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>الاسم العائلة</ion-label>
+        <ion-input [(ngModel)]="postData.Patient_FamilyName"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>الجنسية </ion-label>
+        <ion-select okText='تم' cancelText='إلغاء' [(ngModel)]="postData.Nationality">
+          <ion-option  value="سعودي">سعودي  </ion-option>
+          <ion-option  value="جزائرى">جزائرى </ion-option>
+          <ion-option  value="سوداني">سوداني </ion-option>
+          <ion-option  value="باكستاني">باكستاني  </ion-option>
+          <ion-option  value="فليبيني">فليبيني  </ion-option>
+          <ion-option  value="سنغافوري">سنغافوري</ion-option>
+          <ion-option  value="اردني">اردني</ion-option>
+          <ion-option  value="ماليزي ">ماليزي </ion-option>
+          <ion-option  value="هندي">هندي</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label> رقم الجوال</ion-label>
+        <ion-input [(ngModel)]="postData.Patient_Phone" [readonly]="isReadonly()"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>رقم الهوية </ion-label>
+        <ion-input [(ngModel)]="postData.Patient_ID_Number" [readonly]="isReadonly()"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>شركة التأمين </ion-label>
+        <ion-select okText='تم' cancelText='إلغاء' [(ngModel)]="postData.Ins_Id">
+          <ion-option *ngFor="let item of Company" value="{{item.Ins_Id}}">{{item.Ins_name}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>رقم كرت التأمین </ion-label>
+        <ion-input [(ngModel)]="postData.Ins_CardNumber"></ion-input>
+      </ion-item>
+
+      <button ion-button  (click)="Page3()"  block> التالي </button>
+</ion-content>

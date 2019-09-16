@@ -1,0 +1,47 @@
+.wel-slider {
+    background-color: #fff;
+    height: 100%;
+    margin-top: 0px;
+    border: none;
+    border-radius: 0px;
+}
+.wel-slider ion-slide {
+    height: 100vh;
+    padding: 10px;
+}
+
+.wel-slider ion-slide img {
+    width: 250px;
+    height: 250px;
+    border-radius:150px !important; 
+}
+.wel-slider ion-slide h1{
+    text-shadow: 3px 2px 0 #7A7A7A;
+}
+.wel-slider ion-slide p {
+    text-justify: inter-word;
+    padding: 15px;
+}
+.wel-slider ion-slide .wel-btn{
+    border-radius:120px;
+    padding: 10px 15px; 
+    color: rgb(231,96,51);
+    font-size: medium;
+}
+.step-one {
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+    color: #fff !important;
+}
+
+.step-two {
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+    color: #fff;
+}
+
+.step-three {
+    background: rgb(163,195,255);
+    background: linear-gradient(90deg, rgba(163,195,255,1) 0%, rgba(25,108,255,1) 100%);
+    color: #fff;
+}

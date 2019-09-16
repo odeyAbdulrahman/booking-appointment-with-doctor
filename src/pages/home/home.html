@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>أطلب حجزك الان - 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides dir="ltr" pager="true" slides="true" autoplay="2000" effect="flip" loop>
+    <ion-slide>
+      <img class="s-img" src="../../assets/imgs/img_thumb_1.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img class="s-img" src="../../assets/imgs/img_thumb_2.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img class="s-img" src="../../assets/imgs/img_thumb_3.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img class="s-img" src="../../assets/imgs/img_thumb_4.jpg">
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <h2 class="text-center">قم بتعبئة البيانات التالية</h2>
+      <ion-item>
+        <ion-label>الرقم القومي | الاقامة</ion-label>
+        <ion-input [(ngModel)]="n_number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>رقم الجوال</ion-label>
+        <ion-input [(ngModel)]="phone"></ion-input>
+      </ion-item>
+      <button ion-button  (click)="Page2()" block> التالي </button>
+</ion-content> 

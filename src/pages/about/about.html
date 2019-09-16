@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      حجوزاتي 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+        <button ion-button  (click)="Refresh()"  block> عرض حجوزاتي </button>
+    <ion-grid>
+        <div *ngFor="let item of ListData" class="d-BoxResult">
+        <ion-row>
+            <ion-col>
+                <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>الاسم :</strong> {{item.Patient_FirstName}} {{item.Patient_MiddleName}} {{item.Patient_FamilyName}}</div>
+            </ion-col>
+            <ion-col>
+                <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>الجنسية :</strong> {{item.Nationality}}</div>
+            </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                  <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>رقم كرت التأمين :</strong> {{item.Ins_CardNumber}}</div>
+              </ion-col>
+              <ion-col>
+                  <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>رقم الهاتف :</strong>{{item.Patient_Phone}}</div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                    <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>تاريخ الحجز:</strong>{{item.Res_Date}}</div>
+                </ion-col>
+                <ion-col>
+                    <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>زمن الحجز :</strong>{{item.Res_Time}}</div>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col>
+                      <div style="color: #3b5998; margin-left: 5px " name="eye"><strong>ملاحظة :</strong>{{item.Res_Note}}</div>
+                  </ion-col>
+                </ion-row>
+            </div>
+    </ion-grid>
+</ion-content>
